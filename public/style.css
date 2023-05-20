@@ -1,10 +1,51 @@
+/*
+  colors-in-spanish CSS code start
+*/
+#cis-root{
+  background-color: grey;
+}
 
-:root {
+.cis-colort-title {
+  font-weight: normal;
+}
+
+#cis-red {
+  color: red;
+}
+
+#cis-blue {
+  color: blue;
+}
+
+#cis-orange {
+  color: orange;
+}
+
+#cis-green {
+  color: green;
+}
+
+#cis-yellow {
+  color: yellow;
+}
+
+.cis-img {
+  width: 200px;
+  height: 200px;
+}
+/*
+  colors-in-spanish CSS code end
+
+  *************************************************
+
+  penguin CSS code start
+*/
+#penguin-root {
   --penguin-face: white;
   --penguin-picorna: orange;
   --penguin-skin: gray;
 }
-body {
+.penguin-body {
   background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
   margin: 0;
   padding: 0;
@@ -12,7 +53,7 @@ body {
   height: 100vh;
   overflow: clip;
 }
-.left-mountain {
+.penguin-left-mountain {
   width: 300px;
   height: 300px;
   background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
@@ -21,7 +62,7 @@ body {
   z-index: 2;
   margin-top: 100px;
 }
-.back-mountain {
+.penguin-back-mountain {
   width: 300px;
   height: 300px;
   background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
@@ -31,7 +72,7 @@ body {
   left: 110px;
   top: 225px;
 }
-.sun {
+.penguin-sun {
   width: 200px;
   height: 200px;
   background-color: yellow;
@@ -40,7 +81,7 @@ body {
   top: -75px;
   right: -75px;
 }
-.penguin {
+.penguin-penguin {
   width: 300px;
   height: 300px;
   margin: auto;
@@ -49,14 +90,14 @@ body {
   position: relative;
   transition: transform 1s ease-in-out 0ms;
 }
-.penguin * {
+.penguin-penguin * {
   position: absolute;
 }
-.penguin:active {
+.penguin-penguin:active {
   transform: scale(1.5);
   cursor: not-allowed;
 }
-.penguin-head {
+.penguin-penguin-head {
   width: 50%;
   height: 45%;
   background: linear-gradient(
@@ -69,20 +110,20 @@ body {
   left: 25%;
   z-index: 1;
 }
-.face {
+.penguin-face {
   width: 60%;
   height: 70%;
   background-color: var(--penguin-face);
   border-radius: 70% 70% 60% 60%;
   top: 15%;
 }
-.face.left {
+.penguin-face.left {
   left: 5%;
 }
-.face.right {
+.penguin-face.right {
   right: 5%;
 }
-.chin {
+.penguin-chin {
   width: 90%;
   height: 70%;
   background-color: var(--penguin-face);
@@ -90,20 +131,20 @@ body {
   left: 5%;
   border-radius: 70% 70% 100% 100%;
 }
-.eye {
+.penguin-eye {
   width: 15%;
   height: 17%;
   background-color: black;
   top: 45%;
   border-radius: 50%;
 }
-.eye.left {
+.penguin-eye.left {
   left: 25%;
 }
-.eye.right {
+.penguin-eye.right {
   right: 25%;
 }
-.eye-lid {
+.penguin-eye-lid {
   width: 150%;
   height: 100%;
   background-color: var(--penguin-face);
@@ -111,47 +152,47 @@ body {
   left: -23%;
   border-radius: 50%;
 }
-.blush {
+.penguin-blush {
   width: 15%;
   height: 10%;
   background-color: pink;
   top: 65%;
   border-radius: 50%;
 }
-.blush.left {
+.penguin-blush.left {
   left: 15%;
 }
-.blush.right {
+.penguin-blush.right {
   right: 15%;
 }
-.beak {
+.penguin-beak {
   height: 10%;
   background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
-.beak.top {
+.penguin-beak.top {
   width: 20%;
   top: 60%;
   left: 40%;
 }
-.beak.bottom {
+.penguin-beak.bottom {
   width: 16%;
   top: 65%;
   left: 42%;
 }
-.shirt {
+.penguin-shirt {
   font: bold 25px Helvetica, sans-serif;
   top: 165px;
   left: 127.5px;
   z-index: 1;
   color: #6a6969;
 }
-.shirt div {
+.penguin-shirt div {
   font-weight:  initial;
   top: 22.5px;
   left: 12px;
 }
-.penguin-body {
+.penguin-penguin-body {
   width: 53%;
   height: 45%;
   background: linear-gradient(
@@ -164,7 +205,7 @@ body {
   top: 40%;
   left: 23.5%;
 }
-.penguin-body::before {
+.penguin-penguin-body::before {
   content: "";
   position: absolute;
   width: 50%;
@@ -175,7 +216,7 @@ body {
   border-radius: 0% 0% 100% 100%;
   opacity: 70%;
 }
-.arm {
+.penguin-arm {
   width: 30%;
   height: 60%;
   background: linear-gradient(
@@ -186,14 +227,14 @@ body {
   border-radius: 30% 30% 30% 120%;
   z-index: -1;
 }
-.arm.left {
+.penguin-arm.left {
   top: 35%;
   left: 5%;
   transform-origin: top left; 
   transform: rotate(130deg) scaleX(-1);
   animation: 3s linear infinite wave;
 }
-.arm.right {
+.penguin-arm.right {
   top: 0%;
   right: -5%;
   transform: rotate(-45deg);
@@ -212,7 +253,7 @@ body {
     transform: rotate(130deg) scaleX(-1);
   }
 }
-.foot {
+.penguin-foot {
   width:  15%;
   height: 30%;
   background-color: var(--penguin-picorna);
@@ -220,15 +261,15 @@ body {
   border-radius: 50%;
   z-index: -1;
 }
-.foot.left {
+.penguin-foot.left {
   left: 25%;
   transform: rotate(80deg);
 }
-.foot.right {
+.penguin-foot.right {
   right: 25%;
   transform: rotate(-80deg);
 }
-.ground {
+.penguin-ground {
   width: 100vw;
   height: calc(100vh - 300px);
   background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
@@ -236,3 +277,7 @@ body {
   position: absolute;
   margin-top: -58px;
 }
+/*
+  penguin CSS code end
+*/
+
