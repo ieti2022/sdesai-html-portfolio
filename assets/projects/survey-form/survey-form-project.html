@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./survey-form-project.css" />
+    <title>Ferris Wheel</title>
+  </head>
+  <body>
+  <main>
+    <h1 id="title">Event Feedback Survey</h1>
+      <p id="description">Thank you for your feedback regarding the event.</p>
+      <form action='https://register-demo.freecodecamp.org' id="survey-form">
+        <fieldset>
+          <label id="name-label">Name: <input id="name" type="text" name="fullname" placeholder="First and Last" required /></label>
+          <label id="email-label">Enter Your Email: <input id="email" type="email" name="email" placeholder="abc@gmail.com" required /></label>
+          <label id="number-label">Age (optional): <input id="number" type="number" name="age" min="13" max="120" placeholder="[0-120]" />
+          <label>How would you rate the event?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Excellent Service</option>
+              <option value="2">There's room for improvement</option>
+              <option value="3">I am furious with the service.</option>
+            </select>
+        </label>
+        <label>Did you get help for a Personal account or a Business account?
+          <label><input type="radio" name="account-type" class="inline" value="personal" /> Personal Account</label>
+          <label><input type="radio" name="account-type" class="inline" value="business" /> Business Account</label>
+          <label>How would you rate the Location?
+            <select name="rating">
+              <option value="">(select one)</option>
+              <option value="1">Excellent Service</option>
+              <option value="2">There's room for improvement</option>
+              <option value="3">I am furious with the service.</option>
+            </select>
+          </label>
+          <label>What would you like to see more of? Select all that apply:
+              <input type="checkbox" class="inline" value="mythological" /> Mythological Animals
+              <input type="checkbox" class="inline" value="exotic" /> Exotic Animals
+              <input type="checkbox" class="inline" value="domestic" /> Domestic Animals
+              </label>
+          <label>Any comments or suggestions?
+            <textarea></textarea>
+          </label>
+      </form>
+      <input type="submit" value="Submit" id="submit" />
+    </main>
+  </body>
+</html>
